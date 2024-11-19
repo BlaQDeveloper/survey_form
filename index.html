@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">SURVEY FORM</h1>
+        <p id="description">Thank you for giving us your spare time in order to improve our product
+        </p>
+    </header>
+    <main>
+        <div class="form-container">
+            <form action="#" method="post" id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" class="input-text" name="name" id="name" placeholder=" Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" class="input-email" name="email" id="email" placeholder=" Enter your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="age" id="number-label">Age</label>
+                    <input type="number" class="input-number" name="age" id="number" min="12" max="90" required placeholder=" Age">
+                </div>
+                <div class="form-group">
+                    <p>Which laundry product is best for you to use?</p>
+                    <select name="laundry-products" id="dropdown">
+                        <option value="" disabled selected>Select product</option>
+                        <option value="Ariel">Ariel</option>
+                        <option value="Viva-Plus">Viva Plus</option>
+                        <option value="Sunlight">Sunlight</option>
+                        <option value="So-Kiln">So Kiln</option>
+                        <option value="Magik">Magik</option>
+                        <option value="OMO">OMO</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend product chosen above to friends?
+                        <label for="yes"><input type="radio" name="answer" class="input-radio">Yes</label>
+                        <label for="no"><input type="radio" name="answer" class="input-radio">No</label>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <p>Choose alternatives if the chosen product is unavailable
+                        <label for="alternatives" class="alternatives">
+                            <input type="checkbox" class="input-checkbox" name="alternatives" id="Ariel">
+                            Ariel
+                        </label>
+                        <label for="alternatives" class="alternatives">
+                            <input type="checkbox" class="input-checkbox" name="alternatives" id="OMO">
+                            OMO
+                        </label>
+                        <label for="alternatives" class="alternatives">
+                            <input type="checkbox" class="input-checkbox" name="alternatives" id="Viva-Plus">
+                            Viva Plus
+                        </label>
+                        <label for="alternatives" class="alternatives">
+                            <input type="checkbox" class="input-checkbox" name="alternatives" id="sunlight">
+                            Sunlight
+                        </label>
+                        <label for="alternatives" class="alternatives">
+                            <input type="checkbox" class="input-checkbox" name="alternatives" id="So-Kiln">
+                            So Kiln
+                        </label>
+                        <label for="alternatives" class="alternatives">
+                            <input type="checkbox" class="input-checkbox" name="alternatives" id="Magik">
+                            Magik
+                        </label>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <p>What are the things you love about the product chosen</p>
+                    <textarea name="comments" class="comment-box" id="comment" cols="40" rows="10"
+                        placeholder="Enter your comments here...."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
